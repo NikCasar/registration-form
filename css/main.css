@@ -1,0 +1,9 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+}
