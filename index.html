@@ -2,30 +2,31 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
+  <title>Want to go to Mars?</title>
   <link href="css/modules.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/grid.css">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Want to go to Mars?</title>
 </head>
 <body>
-  <section class="contact pad-t-2 pad-b-2 gutter-2">
-    <div class="max-length">
+  <section class="grid contact pad-t-2 pad-b-2 gutter-2">
+    <div class=" unit max-length">
       <h1 class="push-0 zetta">Want to go to Mars?</h1>
-        <hr>
+      <hr>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-      <h2 class="push-0 italic mega text-left">Personal details</h2><hr>
+      <h2 class="push-0 italic mega text-left">Personal details</h2>
+      <hr>
     </div>
     <form class="push-0" method="post" action="https://formspree.io/casa0036@algonquinlive.com">
       <div class="push">
         <label for="name">Name</label>
-        <input id="name" required>
+        <input id="name" type="text" required>
       </div>
       <div class="push">
         <label for="age">Age</label>
-        <input id="age" required>
+        <input id="age" type="text" required>
       </div>
       <div class="push">
         <label for="email">Email</label>
@@ -33,26 +34,27 @@
       </div>
       <div class="push">
         <label for="physical-fitness">Physical fitness</label>
-        <select id="Physical fitness">
-          <option value="Super-human"></option>
-          <option value="Fit as a fiddle"></option>
-          <option value="Not terribly strong"></option>
-          <option value="A little couch-potato-y"></option>
+        <select id="physical-fitness">
+          <option value="Super-human">Super-human</option>
+          <option value="Fit as a fiddle">Fit as a fiddle</option>
+          <option value="Not terribly strong">Not terribly strong</option>
+          <option value="A little couch-potato-y">A little couch-potato-y</option>
         </select>
       </div>
       <div class="push">
         <label for="address">Address</label>
-        <textarea id="adress" required></textarea>
+        <textarea id="address" name="message" required></textarea>
       </div>
       <div class="push">
-        <h2 class="push-0 italic mega text-left">Mission statement</h2><hr>
+        <h2 class="push-0 italic mega text-left">Mission statement</h2>
+        <hr>
       </div>
       <div class="push">
         <label for="mission-statement">Why do you want to go to Mars?</label>
-        <textarea id="mission-statement" required></textarea>
+        <textarea id="mission-statement" name="message" required></textarea>
       </div>
       <div class="push center-content">
-        <button type="submit" name="button">Register for the trip!</button>
+        <button class="btn btn-light" type="submit">Register for the trip!</button>
         <input type="hidden" name="_subject" value="Request to join the mission">
       </div>
     </form>
